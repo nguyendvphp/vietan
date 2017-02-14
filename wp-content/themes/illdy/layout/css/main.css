@@ -2551,4 +2551,105 @@ a {
   right: 0;
   background-position: -18px 0; }
 
+div.htmlContent {
+  padding: 0 40px; }
+  div.htmlContent .owl-nav div {
+    position: absolute;
+    top: 0;
+    width: 40px;
+    height: 100%; }
+    div.htmlContent .owl-nav div.owl-prev {
+      left: 0; }
+    div.htmlContent .owl-nav div.owl-next {
+      right: 0; }
+    div.htmlContent .owl-nav div span {
+      display: inline-block;
+      width: 17px;
+      height: 26px;
+      background: url(../images/arrow.png);
+      position: absolute;
+      top: 40%; }
+      div.htmlContent .owl-nav div span.icon_pre {
+        background-position: 17px -26px;
+        left: 0; }
+      div.htmlContent .owl-nav div span.icon_next {
+        background-position: 17px 0;
+        right: 0; }
+  div.htmlContent .col-lg-4 {
+    text-align: left; }
+    div.htmlContent .col-lg-4 h3 {
+      width: 90%;
+      margin-left: 10px;
+      text-indent: -10px; }
+      
+div.container .slideContent {
+  padding: 10px 40px 10px 40px; }
+  div.container .slideContent .owl-dots {
+    display: none; }
+  div.container .slideContent .owl-nav div {
+    position: absolute;
+    top: 0;
+    width: 40px;
+    height: 100%; }
+    div.container .slideContent .owl-nav div.owl-prev {
+      left: -40px; }
+    div.container .slideContent .owl-nav div.owl-next {
+      right: -40px; }
+    div.container .slideContent .owl-nav div span {
+      display: inline-block;
+      width: 17px;
+      height: 26px;
+      background: url(../images/arrow.png);
+      position: absolute;
+      top: 40%; }
+      div.container .slideContent .owl-nav div span.icon_pre {
+        background-position: 0 -26px;
+        left: 0; }
+      div.container .slideContent .owl-nav div span.icon_next {
+        background-position: 0 0;
+        right: 0; }
+div.container .owl-carousel .owl-item .item {
+  text-align: center;
+  position: relative; }
+  div.container .owl-carousel .owl-item .item .container {
+    position: absolute;
+    bottom: 30px; }
+div.container .owl-carousel .owl-item img {
+  width: auto;
+  max-width: 100%;
+  margin: auto; }
+  
+div.one_col .owl-nav {
+    display: none; }
+  div.one_col .owl-controls {
+    position: absolute;
+    bottom: 10px;
+    width: 100%; }
+    div.one_col .owl-controls .owl-dots {
+      margin: auto;
+      text-align: center; }
+      div.one_col .owl-controls .owl-dots .owl-dot {
+        display: inline-block;
+        width: 10px;
+        height: 15px;
+        margin: 0 4px 0 4px;
+        overflow: hidden; }
+        div.one_col .owl-controls .owl-dots .owl-dot span {
+          display: inline-block;
+          width: 10px;
+          height: 10px;
+          background: #FFF;
+          border-radius: 5px; }
+        div.one_col .owl-controls .owl-dots .owl-dot.active span {
+          background: #008194; }
+  div.one_col .owl-item .item {
+    position: relative; }
+    div.one_col .owl-item .item .container {
+      position: absolute;
+      top: 250px;
+      color: #FFF;
+      left: 100px; }
+      div.one_col .owl-item .item .container h3.lg-title {
+        margin-top: 0;
+        font-size: 48px; }
 /*# sourceMappingURL=main.css.map */

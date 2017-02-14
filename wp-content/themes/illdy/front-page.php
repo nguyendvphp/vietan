@@ -73,7 +73,37 @@ else:
 			<?php endif;
 		endwhile;
 	endif;
-
+?>
+<div id="arousel_1" class="owl-carousel one_col owl-theme owl-center owl-loaded">
+    <div class="item "><a href="http://hoathienphu.com.vn/nha-may-hoa-thien-phu-binh-duong-tu-hao-dat-chuan-cgmp-asean.html" title="" target="_blank"><img src="http://hoathienphu.com.vn/wp-content/uploads/2016/10/banner_1920x760-3a.jpg" alt=""></a></div>
+    <div class="item "><a href="http://hoathienphu.com.vn/du-phat-trien-vung-duoc-lieu-ben-vung-tai-nam-dinh.html" title=""><img src="http://hoathienphu.com.vn/wp-content/uploads/2016/06/VungDuocLieu_1.jpg" alt=""></a></div>
+    <div class="item "><a href="http://hoathien.vn/kem-got-hong-hoa-thien" title="" target="_blank"><img src="http://hoathienphu.com.vn/wp-content/uploads/2016/11/Banner_GotHong_1920x760-1.jpg" alt=""></a></div>
+</div>
+<div class="container">
+        <div class="slideContent">
+            <div id="arousel_2" class="owl-carousel owl-theme owl-loaded">
+                <div class="item">
+                    <a href="http://hoathienphu.com.vn/san-pham/phu-nu/sac-ngoc-khang.html" title="" target="_blank"><img src="http://hoathienphu.com.vn/wp-content/uploads/2016/07/logo_snk.jpg" alt=""></a>
+                </div>
+                <div class="item">
+                    <a href="http://hoathienphu.com.vn/san-pham/phu-nu/kem-finomas.html" title="" target="_blank"><img src="http://hoathienphu.com.vn/wp-content/uploads/2016/07/logo_fnm.jpg" alt=""></a>
+                </div>
+                <div class="item">
+                    <a href="http://hoathienphu.com.vn/san-pham/phu-nu/an-nu-dan.html" title="" target="_blank"><img src="http://hoathienphu.com.vn/wp-content/uploads/2016/07/logo_annudan.jpg" alt=""></a>
+                </div>
+                <div class="item">
+                    <a href="http://hoathienphu.com.vn/san-pham/phu-nu/hoang-to-nu.html" title="" target="_blank"><img src="http://hoathienphu.com.vn/wp-content/uploads/2016/07/logo_htn.jpg" alt=""></a>
+                </div>
+                <div class="item">
+                    <a href="http://hoathienphu.com.vn/san-pham/trung-nien-va-nguoi-cao-tuoi/ngu-ngon-bach-linh.html" title="" target="_blank"><img src="http://hoathienphu.com.vn/wp-content/uploads/2016/08/logo_bl-.jpg" alt=""></a>
+                </div>
+                <div class="item">
+                    <a href="http://hoathienphu.com.vn/san-pham/cac-san-pham-khac/happy-xoang.html" title="" target="_blank"><img src="http://hoathienphu.com.vn/wp-content/uploads/2016/07/logo_hpxoang.jpg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+<?php
 	if( $sections_order_first_section ):
 		illdy_sections_order( $sections_order_first_section );
 	endif;
@@ -107,6 +137,7 @@ else:
 	endif;
     
     ?>
+    
     <div style="background-image: url(http://hoathienphu.com.vn/wp-content/uploads/2016/05/vung-trong-duoc-lieu.jpg);  background-position: 30% 47%;   background-repeat: no-repeat;" id="box_9">
         <div class="container">
             <div class="video_box">
@@ -130,51 +161,30 @@ else:
                         
         
         </div>
-        <div class="danhhieu"><div class="container">
-        <div class="htmlContent  owl-carousel owl-theme owl-loaded" id="arousel_3">
-        <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-2120px, 0px, 0px); transition: all 0.25s ease 0s; width: 14840px;"><div class="owl-item cloned" ><div class="row item "><div class="col-lg-6 text-left"><h3>
-                        Doanh nghiệp nhiều đóng góp cho xã hội
-                        </h3>
-                        <h4><p style="text-align: justify;">Năm 2014</p></h4></div><div class="col-lg-6"><img alt="" src="http://hoathienphu.com.vn/wp-content/uploads/2016/05/7-1.png"></div></div></div><div class="owl-item cloned" ><div class="row item "><div class="col-lg-6 text-left"><h3>
-                          Sản phẩm vàng vì sức khỏe cộng đồng
-                        </h3>
-                        <h4><p style="text-align: justify;">Hiệp hội thực phẩm chức năng Việt Nam trao tặng</p></h4></div><div class="col-lg-6"><img alt="" src="http://hoathienphu.com.vn/wp-content/uploads/2016/05/4-1.png"></div></div></div><div class="owl-item active" ><div class="row item active"><div class="col-lg-6 text-left"><h3>
-                            Danh hiệu &amp; Giải Thưởng
-                        </h3>
-                        <p style="text-align: justify;">Với quá trình lao động và sáng tạo một cách nghiêm túc dựa trên quyền lợi của khách hàng và người tiêu dùng, sau gần 5 năm hoạt động và phát triển, Hoa Thiên Phú đã chứng tỏ được vị thế của mình trên thị trường dược phẩm Việt Nam bằng những danh hiệu và giải thưởng là hàng Việt Nam chất lượng cao.</p></div><div class="col-lg-6"><img alt="" src="http://hoathienphu.com.vn/wp-content/uploads/2016/04/chungnhan.png"></div></div></div><div class="owl-item" ><div class="row item "><div class="col-lg-6 text-left"><h3>
-                         Thương hiệu xuất sắc 2013
-                        </h3>
-                        <h4><p style="text-align: justify;">Siro ăn ngon Hoa Thiên</p></h4></div><div class="col-lg-6"><img alt="" src="http://hoathienphu.com.vn/wp-content/uploads/2016/05/5-2.png"></div></div></div><div class="owl-item" ><div class="row item "><div class="col-lg-6 text-left"><h3>
-                          Hàng Việt Nam chất lượng cao 2013
-                        </h3>
-                        <h4><p style="text-align: justify;">Do người tiêu dùng bình chọn</p></h4></div><div class="col-lg-6"><img alt="" src="http://hoathienphu.com.vn/wp-content/uploads/2016/05/9-2.png"></div></div></div><div class="owl-item" ><div class="row item "><div class="col-lg-6 text-left"><h3>
-                         Hàng Việt tốt 2014
-                        </h3>
-                        <h4><p style="text-align: justify;">Do người tiêu dùng bình chọn</p></h4></div><div class="col-lg-6"><img alt="" src="http://hoathienphu.com.vn/wp-content/uploads/2016/05/8-2.png"></div></div></div><div class="owl-item" ><div class="row item "><div class="col-lg-6 text-left"><h3>
-                        Top 100 sản phẩm-dịch vụ tốt nhất 2014
-                        </h3>
-                        <h4><p style="text-align: justify;">Chức năng gan Bảo Nguyên và Sắc Ngọc Khang</p></h4></div><div class="col-lg-6"><img alt="" src="http://hoathienphu.com.vn/wp-content/uploads/2016/05/1-1.png"></div></div></div><div class="owl-item" ><div class="row item "><div class="col-lg-6 text-left"><h3>
-                        Hàng Việt Nam chất lượng cao 2015
-                        </h3>
-                        <h4><p style="text-align: justify;">Do người tiêu dùng bình chọn</p></h4></div><div class="col-lg-6"><img alt="" src="http://hoathienphu.com.vn/wp-content/uploads/2016/05/6-1.png"></div></div></div><div class="owl-item" ><div class="row item "><div class="col-lg-6 text-left"><h3>
-                        Top 20 sản phẩm, dịch vụ tin cậy vì người tiêu dùng
-                        </h3>
-                        <h4><p style="text-align: justify;">Sản phẩm Sắc Ngọc Khang và Siro ăn ngon Hoa Thiên</p></h4></div><div class="col-lg-6"><img alt="" src="http://hoathienphu.com.vn/wp-content/uploads/2016/05/3-1.png"></div></div></div><div class="owl-item" ><div class="row item "><div class="col-lg-6 text-left"><h3>
-                         Sản phẩm vì sức khỏe cộng đồng
-                        </h3>
-                        <h4><p style="text-align: justify;">Sắc Ngọc Khang và Siro ăn ngon Hoa Thiên</p></h4></div><div class="col-lg-6"><img alt="" src="http://hoathienphu.com.vn/wp-content/uploads/2016/05/2-3.png"></div></div></div><div class="owl-item" ><div class="row item "><div class="col-lg-6 text-left"><h3>
-                        Doanh nghiệp nhiều đóng góp cho xã hội
-                        </h3>
-                        <h4><p style="text-align: justify;">Năm 2014</p></h4></div><div class="col-lg-6"><img alt="" src="http://hoathienphu.com.vn/wp-content/uploads/2016/05/7-1.png"></div></div></div><div class="owl-item" ><div class="row item "><div class="col-lg-6 text-left"><h3>
-                          Sản phẩm vàng vì sức khỏe cộng đồng
-                        </h3>
-                        <h4><p style="text-align: justify;">Hiệp hội thực phẩm chức năng Việt Nam trao tặng</p></h4></div><div class="col-lg-6"><img alt="" src="http://hoathienphu.com.vn/wp-content/uploads/2016/05/4-1.png"></div></div></div><div class="owl-item cloned" ><div class="row item"><div class="col-lg-6 text-left"><h3>
-                            Danh hiệu &amp; Giải Thưởng
-                        </h3>
-                        <p style="text-align: justify;">Với quá trình lao động và sáng tạo một cách nghiêm túc dựa trên quyền lợi của khách hàng và người tiêu dùng, sau gần 5 năm hoạt động và phát triển, Hoa Thiên Phú đã chứng tỏ được vị thế của mình trên thị trường dược phẩm Việt Nam bằng những danh hiệu và giải thưởng là hàng Việt Nam chất lượng cao.</p></div><div class="col-lg-6"><img alt="" src="http://hoathienphu.com.vn/wp-content/uploads/2016/04/chungnhan.png"></div></div></div><div class="owl-item cloned" ><div class="row item "><div class="col-lg-6 text-left"><h3>
-                         Thương hiệu xuất sắc 2013
-                        </h3>
-                        <h4><p style="text-align: justify;">Siro ăn ngon Hoa Thiên</p></h4></div><div class="col-lg-6"><img alt="" src="http://hoathienphu.com.vn/wp-content/uploads/2016/05/5-2.png"></div></div></div></div></div><div class="owl-controls"><div class="owl-nav"><div class="owl-prev" style=""><span class="icon_pre"></span></div><div class="owl-next" style=""><span class="icon_next"></span></div></div><div style="display: none;" class="owl-dots"></div></div></div></div></div>
+        <div class="danhhieu">
+            <div class="container">
+                <div class="htmlContent owl-carousel owl-theme owl-loaded" id="arousel_3">
+                    <div class="row item ">
+                        <div class="col-lg-6 text-left">
+                            <h3>
+                                    Doanh nghiệp nhiều đóng góp cho xã hội
+                            </h3>
+                            <h4><p style="text-align: justify;">Năm 2014</p></h4>
+                        </div>
+                        <div class="col-lg-6"><img alt="" src="http://hoathienphu.com.vn/wp-content/uploads/2016/05/7-1.png"></div>
+                    </div>
+                    <div class="row item ">
+                        <div class="col-lg-6 text-left">
+                            <h3>
+                                  Sản phẩm vàng vì sức khỏe cộng đồng
+                            </h3>
+                            <h4><p style="text-align: justify;">Hiệp hội thực phẩm chức năng Việt Nam trao tặng</p></h4>
+                        </div>
+                        <div class="col-lg-6"><img alt="" src="http://hoathienphu.com.vn/wp-content/uploads/2016/05/4-1.png"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     <?php
 endif;
 

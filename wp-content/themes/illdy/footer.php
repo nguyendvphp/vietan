@@ -81,7 +81,7 @@ if ( current_user_can( 'edit_theme_options' ) ) {
                             })
                         </script>
                                         
-                        <!--<script type="text/javascript">
+                        <script type="text/javascript">
                             $(document).ready(function(){
                                 $("#arousel_1").owlCarousel({
                                     loop:true,
@@ -105,8 +105,6 @@ if ( current_user_can( 'edit_theme_options' ) ) {
                                 })
                             })
                         </script>
-                    
-        
                         <script type="text/javascript">
                             $(document).ready(function(){
                             	$("#arousel_2").owlCarousel({
@@ -131,7 +129,7 @@ if ( current_user_can( 'edit_theme_options' ) ) {
                             		}
                             	})
                             })
-                        </script>-->
+                        </script>
                         <script type="text/javascript">
                             $(document).ready(function(){
                             	$("#arousel_3").owlCarousel({
