@@ -277,7 +277,7 @@ if ( ! function_exists( 'illdy_widgets' ) ) {
 			'description'   => __( 'The widgets added in this sidebar will appear in first block from footer.', 'illdy' ),
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</div>',
-			'before_title'  => '<div class="widget-title"><h3>',
+			'before_title'  => '<div class="widget-title"><h3 class="first has-sub">',
 			'after_title'   => '</h3></div>',
 		) );
 
@@ -288,7 +288,7 @@ if ( ! function_exists( 'illdy_widgets' ) ) {
 			'description'   => __( 'The widgets added in this sidebar will appear in second block from footer.', 'illdy' ),
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</div>',
-			'before_title'  => '<div class="widget-title"><h3>',
+			'before_title'  => '<div class="widget-title"><h3 class="first has-sub">',
 			'after_title'   => '</h3></div>',
 		) );
 
@@ -299,7 +299,51 @@ if ( ! function_exists( 'illdy_widgets' ) ) {
 			'description'   => __( 'The widgets added in this sidebar will appear in third block from footer.', 'illdy' ),
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</div>',
-			'before_title'  => '<div class="widget-title"><h3>',
+			'before_title'  => '<div class="widget-title"><h3 class="first has-sub">',
+			'after_title'   => '</h3></div>',
+		) );
+        
+        // Footer Sidebar 4
+		register_sidebar( array(
+			'name'          => __( 'Footer Sidebar 4', 'illdy' ),
+			'id'            => 'footer-sidebar-4',
+			'description'   => __( 'The widgets added in this sidebar will appear in third block from footer.', 'illdy' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<div class="widget-title"><h3 class="first has-sub">',
+			'after_title'   => '</h3></div>',
+		) );
+        
+        // Block Post by Category 1
+		register_sidebar( array(
+			'name'          => __( 'Block Post by Category 1', 'illdy' ),
+			'id'            => 'block-post-by-cate-1',
+			'description'   => __( 'Block Post by Category 1.', 'illdy' ),
+			'before_widget' => '<div class="col-lg-4 feature" id="style1_box">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h3 class="title feature"><div>',
+			'after_title'   => '</div></h3>',
+		) );
+        
+        // Block Post by Category 2
+		register_sidebar( array(
+			'name'          => __( 'Block Post by Category 2', 'illdy' ),
+			'id'            => 'block-post-by-cate-2',
+			'description'   => __( 'Block Post by Category 2.', 'illdy' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<div class="col-lg-4 feature" id="style1_box"><h3 class="title feature">',
+			'after_title'   => '</h3></div>',
+		) );
+        
+        // Block Post by Category 3
+		register_sidebar( array(
+			'name'          => __( 'Block Post by Category 3', 'illdy' ),
+			'id'            => 'block-post-by-cate-3',
+			'description'   => __( 'Block Post by Category 3.', 'illdy' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<div class="col-lg-4 feature" id="style1_box"><h3 class="title feature">',
 			'after_title'   => '</h3></div>',
 		) );
 

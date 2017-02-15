@@ -17,56 +17,75 @@ if ( current_user_can( 'edit_theme_options' ) ) {
 }
 ?>
 <footer id="footer">
-	<div class="container">
-		<div class="row">
-			<?php
-			$the_widget_args = array(
-				'before_widget' => '<div class="widget">',
-				'after_widget'  => '</div>',
-				'before_title'  => '<div class="widget-title"><h3>',
-				'after_title'   => '</h3></div>',
-			);
-			?>
-			<div class="col-sm-3">
-				<?php
-				if ( is_active_sidebar( 'footer-sidebar-1' ) ):
-					dynamic_sidebar( 'footer-sidebar-1' );
-				elseif ( current_user_can( 'edit_theme_options' ) ):
-					the_widget( 'WP_Widget_Text', 'title=' . __( 'Products', 'illdy' ) . '&text=<ul><li><a href="' . esc_url( '#' ) . '" title="' . __( 'Our work', 'illdy' ) . '">' . __( 'Our work', 'illdy' ) . '</a></li><li><a href="' . esc_url( '#' ) . '" title="' . __( 'Club', 'illdy' ) . '">' . __( 'Club', 'illdy' ) . '</a></li><li><a href="' . esc_url( '#' ) . '" title="' . __( 'News', 'illdy' ) . '">' . __( 'News', 'illdy' ) . '</a></li><li><a href="' . esc_url( '#' ) . '" title="' . __( 'Announcement', 'illdy' ) . '">' . __( 'Announcement', 'illdy' ) . '</a></li></ul>', $the_widget_args );
-				endif;
-				?>
-			</div><!--/.col-sm-3-->
-			<div class="col-sm-3">
-				<?php
-				if ( is_active_sidebar( 'footer-sidebar-2' ) ):
-					dynamic_sidebar( 'footer-sidebar-2' );
-				elseif ( current_user_can( 'edit_theme_options' ) ):
-					the_widget( 'WP_Widget_Text', 'title=' . __( 'Information', 'illdy' ) . '&text=<ul><li><a href="' . esc_url( '#' ) . '" title="' . __( 'Pricing', 'illdy' ) . '">' . __( 'Pricing', 'illdy' ) . '</a></li><li><a href="' . esc_url( '#' ) . '" title="' . __( 'Terms', 'illdy' ) . '">' . __( 'Terms', 'illdy' ) . '</a></li><li><a href="' . esc_url( '#' ) . '" title="' . __( 'Affiliates', 'illdy' ) . '">' . __( 'Affiliates', 'illdy' ) . '</a></li><li><a href="' . esc_url( '#' ) . '" title="' . __( 'Blog', 'illdy' ) . '">' . __( 'Blog', 'illdy' ) . '</a></li></ul>', $the_widget_args );
-				endif;
-				?>
-			</div><!--/.col-sm-3-->
-			<div class="col-sm-3">
-				<?php
-				if ( is_active_sidebar( 'footer-sidebar-3' ) ):
-					dynamic_sidebar( 'footer-sidebar-3' );
-				elseif ( current_user_can( 'edit_theme_options' ) ):
-					the_widget( 'WP_Widget_Text', 'title=' . __( 'Support', 'illdy' ) . '&text=<ul><li><a href="' . esc_url( '#' ) . '" title="' . __( 'Documentation', 'illdy' ) . '">' . __( 'Documentation', 'illdy' ) . '</a></li><li><a href="' . esc_url( '#' ) . '" title="' . __( 'FAQs', 'illdy' ) . '">' . __( 'FAQs', 'illdy' ) . '</a></li><li><a href="' . esc_url( '#' ) . '" title="' . __( 'Forums', 'illdy' ) . '">' . __( 'Forums', 'illdy' ) . '</a></li><li><a href="' . esc_url( '#' ) . '" title="' . __( 'Contact', 'illdy' ) . '">' . __( 'Contact', 'illdy' ) . '</a></li></ul>', $the_widget_args );
-				endif;
-				?>
-			</div><!--/.col-sm-3-->
-			<div class="col-sm-3">
-				<?php if ( $img_footer_logo ): ?>
-					<a href="<?php echo esc_url( home_url() ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" class="footer-logo"><img src="<?php echo esc_url( $img_footer_logo ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" /></a>
-				<?php endif; ?>
-				<p class="copyright">
-					<span data-customizer="copyright-credit"><?php printf( '%s <a href="%s" title="%s" target="_blank">%s</a>.', __( 'Theme:', 'illdy' ), esc_url( 'http://colorlib.com/wp/themes/illdy' ), __( 'Illdy', 'illdy' ), __( 'Illdy', 'illdy' ) ); ?></span>
-				</p>
-				<span><?php echo illdy_sanitize_html( $footer_copyright ); ?></span>
-			</div><!--/.col-sm-3-->
-		</div><!--/.row-->
-	</div><!--/.container-->
+    <div class="footer">
+    	<div class="container">
+    		<div class="row">
+    			<?php
+    			$the_widget_args = array(
+    				'before_widget' => '<div class="widget">',
+    				'after_widget'  => '</div>',
+    				'before_title'  => '<div class="widget-title"><h3>',
+    				'after_title'   => '</h3></div>',
+    			);
+    			?>
+    			<div class="col-sm-3">
+    				<?php
+    				if ( is_active_sidebar( 'footer-sidebar-1' ) ):
+    					dynamic_sidebar( 'footer-sidebar-1' );
+    				elseif ( current_user_can( 'edit_theme_options' ) ):
+    					the_widget( 'WP_Widget_Text', 'title=' . __( 'Products', 'illdy' ) . '&text=<ul><li><a href="' . esc_url( '#' ) . '" title="' . __( 'Our work', 'illdy' ) . '">' . __( 'Our work', 'illdy' ) . '</a></li><li><a href="' . esc_url( '#' ) . '" title="' . __( 'Club', 'illdy' ) . '">' . __( 'Club', 'illdy' ) . '</a></li><li><a href="' . esc_url( '#' ) . '" title="' . __( 'News', 'illdy' ) . '">' . __( 'News', 'illdy' ) . '</a></li><li><a href="' . esc_url( '#' ) . '" title="' . __( 'Announcement', 'illdy' ) . '">' . __( 'Announcement', 'illdy' ) . '</a></li></ul>', $the_widget_args );
+    				endif;
+    				?>
+    			</div><!--/.col-sm-3-->
+    			<div class="col-sm-3">
+    				<?php
+    				if ( is_active_sidebar( 'footer-sidebar-2' ) ):
+    					dynamic_sidebar( 'footer-sidebar-2' );
+    				elseif ( current_user_can( 'edit_theme_options' ) ):
+    					the_widget( 'WP_Widget_Text', 'title=' . __( 'Information', 'illdy' ) . '&text=<ul><li><a href="' . esc_url( '#' ) . '" title="' . __( 'Pricing', 'illdy' ) . '">' . __( 'Pricing', 'illdy' ) . '</a></li><li><a href="' . esc_url( '#' ) . '" title="' . __( 'Terms', 'illdy' ) . '">' . __( 'Terms', 'illdy' ) . '</a></li><li><a href="' . esc_url( '#' ) . '" title="' . __( 'Affiliates', 'illdy' ) . '">' . __( 'Affiliates', 'illdy' ) . '</a></li><li><a href="' . esc_url( '#' ) . '" title="' . __( 'Blog', 'illdy' ) . '">' . __( 'Blog', 'illdy' ) . '</a></li></ul>', $the_widget_args );
+    				endif;
+    				?>
+    			</div><!--/.col-sm-3-->
+    			<div class="col-sm-3">
+    				<?php
+    				if ( is_active_sidebar( 'footer-sidebar-3' ) ):
+    					dynamic_sidebar( 'footer-sidebar-3' );
+    				elseif ( current_user_can( 'edit_theme_options' ) ):
+    					the_widget( 'WP_Widget_Text', 'title=' . __( 'Support', 'illdy' ) . '&text=<ul><li><a href="' . esc_url( '#' ) . '" title="' . __( 'Documentation', 'illdy' ) . '">' . __( 'Documentation', 'illdy' ) . '</a></li><li><a href="' . esc_url( '#' ) . '" title="' . __( 'FAQs', 'illdy' ) . '">' . __( 'FAQs', 'illdy' ) . '</a></li><li><a href="' . esc_url( '#' ) . '" title="' . __( 'Forums', 'illdy' ) . '">' . __( 'Forums', 'illdy' ) . '</a></li><li><a href="' . esc_url( '#' ) . '" title="' . __( 'Contact', 'illdy' ) . '">' . __( 'Contact', 'illdy' ) . '</a></li></ul>', $the_widget_args );
+    				endif;
+    				?>
+    			</div><!--/.col-sm-3-->
+    			<div class="col-sm-3">
+    				<?php
+    				if ( is_active_sidebar( 'footer-sidebar-4' ) ):
+    					dynamic_sidebar( 'footer-sidebar-4' );
+    				elseif ( current_user_can( 'edit_theme_options' ) ):
+    					the_widget( 'WP_Widget_Text', 'title=' . __( 'Support1', 'illdy' ) . '&text=<ul><li><a href="' . esc_url( '#' ) . '" title="' . __( 'Documentation1', 'illdy' ) . '">' . __( 'Documentation1', 'illdy' ) . '</a></li><li><a href="' . esc_url( '#' ) . '" title="' . __( 'FAQs1', 'illdy' ) . '">' . __( 'FAQs1', 'illdy' ) . '</a></li><li><a href="' . esc_url( '#' ) . '" title="' . __( 'Forums', 'illdy' ) . '">' . __( 'Forums1', 'illdy' ) . '</a></li><li><a href="' . esc_url( '#' ) . '" title="' . __( 'Contact1', 'illdy' ) . '">' . __( 'Contact1', 'illdy' ) . '</a></li></ul>', $the_widget_args );
+    				endif;
+    				?>
+    			</div><!--/.col-sm-3-->
+    		</div><!--/.row-->
+    	</div><!--/.container-->
+    </div>
 </footer><!--/#footer-->
-
+<div class="bottom-footer">
+    <div class="wrap container">
+        <div class="menu-footer-container">
+            <ul id="menu-footer" class="menu">
+                <li><a href="http://vietanpharma.com" title="Trang ch?">Trang chủ</a></li>
+                <li id="menu-item-475" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-475"><a href="http://vietanpharma.com/thong-tin-lien-he">Thông tin liên hệ</a></li>
+            </ul>
+        </div>
+        <div class="menu-social-container">
+            <ul id="menu-social-1" class="menu">
+                <li id="menu-item-98" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-98"><a href="https://www.facebook.com/hoathienphu"><i class="fa fa-facebook-official"></i></a></li>
+                <li id="menu-item-99" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-99"><a href="https://www.youtube.com/channel/UChBqMZ2sn714EDc3LD4X5yw"><i class="fa fa-youtube"></i></a></li>
+            </ul>
+        </div>			
+        <div class="textwidget"> <p>Bản quyền thuộc về Việt An.</p></div>
+		
+    </div>
+</div>
 
 <?php wp_footer(); ?>
 
