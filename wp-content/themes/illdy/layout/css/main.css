@@ -125,6 +125,21 @@ ul li{
 }
 
 /* 02. Header */
+.navbar-related-top {
+  position: relative;
+  margin-bottom: 0; }
+  .navbar-related-top .top-header .clearfix li a {
+    color: #6d6e71; }
+  .top-header.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 999;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.75);
+    box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.75); }
 #header {
 	width: 100%;
 	background-position: center;
@@ -136,12 +151,8 @@ ul li{
 
 #header .top-header {
 	background: #fff none repeat scroll 0 0;
-    border-bottom: 1px solid #ccc;
-    box-shadow: 2px 2px 2px 0;
     padding-top: 10px;
-    position: fixed;
     width: 100%;
-    z-index: 99999;
 }
 
 #header .top-header .header-logo {
@@ -2276,7 +2287,7 @@ input[type=submit] {
 
 	.open-responsive-menu .fa {
 		font-size: 22px;
-		color: #fff;
+		color: #000;
 	}
 
 	.responsive-menu {
@@ -2321,7 +2332,8 @@ input[type=submit] {
 	#header .top-header .header-logo img {
 		max-width: 320px;
 	}
-
+    .danhhieu h3 , .gt-title{
+    font-size: 28px !important; }
 	#header .bottom-header h2 {
 		font-size: 60px;
 	}
@@ -2431,7 +2443,8 @@ input[type=submit] {
 	#header .bottom-header h2 {
 		font-size: 40px;
 	}
-
+    .danhhieu h3 , .gt-title{
+    font-size: 14px !important; }
 	#team .section-content .person .person-image {
 		width: 100%;
 		margin-right: 0;
@@ -2689,7 +2702,7 @@ div#style1_box ul {
       margin: 0; }
     div#style1_box ul li:nth-last-child(1) {
       border: 0 none; }
-    div#style1_box ul li:first-child a:after {
+    div#style1_box ul li:first-child a.post-title:after {
       position: relative;
       content: "";
       background: url("../images/new.png") 0 0;

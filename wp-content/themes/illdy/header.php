@@ -52,7 +52,7 @@ if ( ( is_single() || is_page() || is_archive() ) && get_theme_mod( 'illdy_archi
 <?php if ( $preloader_enable == 1 ): ?>
 	<div class="pace-overlay"></div>
 <?php endif; ?>
-<header id="header" class="<?php if ( get_option( 'show_on_front' ) == 'page' && is_front_page() ): echo 'header-front-page';
+<header id="header" class="navbar navbar-inverse navbar-related-top <?php if ( get_option( 'show_on_front' ) == 'page' && is_front_page() ): echo 'header-front-page';
 else: echo 'header-blog'; endif; ?>" style="<?php echo $style ?>">
 	<div class="top-header">
 		<div class="container">
@@ -112,6 +112,12 @@ else: echo 'header-blog'; endif; ?>" style="<?php echo $style ?>">
 			?>
 		</ul>
 	</nav><!--/.responsive-menu-->
+    <div class="breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/">
+        <?php if(function_exists('bcn_display'))
+        {
+            bcn_display();
+        }?>
+    </div>
 	<?php
 	if ( get_option( 'show_on_front' ) == 'page' && is_front_page() ):
 		get_template_part( 'sections/front-page', 'bottom-header' );

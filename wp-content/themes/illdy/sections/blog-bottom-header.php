@@ -11,9 +11,9 @@
 	<div class="container">
 		<div class="row">
 			<?php if ( is_page_template( 'page-templates/blog.php' ) || is_singular() ): ?>
-				<div class="col-sm-12">
+				<!--<div class="col-sm-12">
 					<h2><?php the_title(); ?><span class="span-dot">.</span></h2>
-				</div><!--/.col-sm-12-->
+				</div>/.col-sm-12-->
 			<?php else: ?>
 				<div class="col-sm-12">
 					<?php
@@ -28,9 +28,9 @@
 
 
 					if ( ! empty( $custom_blog_archive_title ) ) {
-						echo '<h2>' . esc_html( $custom_blog_archive_title ) . '<span class="span-dot">.</span></h2>';
+						//echo '<h2>' . esc_html( $custom_blog_archive_title ) . '<span class="span-dot">.</span></h2>';
 					} else {
-						the_archive_title( '<h2>', '<span class="span-dot">.</span></h2>' );
+						//the_archive_title( '<h2>', '<span class="span-dot">.</span></h2>' );
 					}
 
 					?>

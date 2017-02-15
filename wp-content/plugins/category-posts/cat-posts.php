@@ -686,7 +686,7 @@ class Widget extends \WP_Widget {
      *
      * @since 4.6
 	 */
-    function itemHTML($instance,$current_post_id) {
+    function itemHTML($instance,$current_post_id, $post_id) {
         global $post;
         
 		$everything_is_link = isset( $instance['everything_is_link'] ) && $instance['everything_is_link'];
@@ -694,7 +694,7 @@ class Widget extends \WP_Widget {
         $ret = '<li ';
                     
 		// Current post
-        if ( $current_post_id == $post->ID ) { 
+        if ( $post_id == $post->ID ) { 
             $ret .= "class='top-item'"; 
         } else {
             $ret .= "class='icon-item'";
@@ -705,12 +705,12 @@ class Widget extends \WP_Widget {
 			$ret .= '<div class="hit_des"><a href="'.get_the_permalink().'" title="">';
 		}
         // Thumbnail position to top
-        if( isset( $instance["thumbTop"] ) && $instance["thumbTop"]) {
+        if( isset( $instance["thumbTop"] ) && $instance["thumbTop"] && $post_id != $post->ID) {
             $ret .= $this->show_thumb($instance,$everything_is_link); 
         }
         
         // Thumbnail position normal
-        if( !(isset( $instance["thumbTop"] ) && $instance["thumbTop"])) {
+        if( !(isset( $instance["thumbTop"] ) && $instance["thumbTop"] || $post_id == $post->ID)) {
             $ret .= $this->show_thumb($instance,$everything_is_link);
         }
         
@@ -752,13 +752,14 @@ class Widget extends \WP_Widget {
         
 
 		// Excerpt
-        if ( isset( $instance['excerpt'] ) && $instance['excerpt']) {
+        //if ( isset( $instance['excerpt'] ) && $instance['excerpt']) {
+          if ($post_id == $post->ID ) {  
             // use the_excerpt filter to get the "normal" excerpt of the post
             // then apply our filter to let users customize excerpts in their own way
             if (isset($instance['excerpt_length']) && ($instance['excerpt_length'] > 0))
-                $length = (int) $instance['excerpt_length'];
+                $length = 35;
             else 
-                $length = 55; // use default
+                $length = 35; // use default
 
 			if (!isset($instance['excerpt_filters']) || $instance['excerpt_filters']) { // pre 4.7 widgets has filters on
 				$excerpt = apply_filters('the_excerpt', \get_the_excerpt() );
@@ -898,11 +899,25 @@ class Widget extends \WP_Widget {
 		
         $args = $this->queryArgs($instance);
 		$cat_posts = new \WP_Query( $args );
-		
+		$instance["num"] = 1;
+        $args1 = $this->queryArgs($instance);
+        $one_post = new \WP_Query( $args1 );
+        $post_id = $one_post->posts[0]->ID;
+        $title = $one_post->posts[0]->post_title;
+        $feat_image_url = '';
+        if ( has_post_thumbnail($post_id) ) {
+            $feat_image_url = wp_get_attachment_url( get_post_thumbnail_id($post_id) );
+        }
+        
 		if ( !isset ( $instance["hide_if_empty"] ) || !$instance["hide_if_empty"] || $cat_posts->have_posts() ) {				
 			echo $before_widget;
             echo $this->titleHTML($before_title,$after_title,$instance);
-
+            
+            echo '<div class="thumbnail-box">
+                <a href="'.get_permalink($post_id).'">
+                    <img width="360" height="180" src="'.$feat_image_url.'" class="img-round" alt="'.$title.'"/>
+                </a>
+            </div>';
             $current_post_id = null;
             if (is_singular())
                 $current_post_id = get_the_ID();
@@ -918,7 +933,7 @@ class Widget extends \WP_Widget {
 			while ( $cat_posts->have_posts() )
 			{
                 $cat_posts->the_post();              
-				echo $this->itemHTML($instance,$current_post_id);
+				echo $this->itemHTML($instance,$current_post_id, $post_id);
 			}
 			echo "</ul>\n";
 

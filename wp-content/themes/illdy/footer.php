@@ -72,7 +72,7 @@ if ( current_user_can( 'edit_theme_options' ) ) {
     <div class="wrap container">
         <div class="menu-footer-container">
             <ul id="menu-footer" class="menu">
-                <li><a href="http://vietanpharma.com" title="Trang ch?">Trang chủ</a></li>
+                <li><a href="http://vietanpharma.com" title="Trang chủ?">Trang chủ</a></li>
                 <li id="menu-item-475" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-475"><a href="http://vietanpharma.com/thong-tin-lien-he">Thông tin liên hệ</a></li>
             </ul>
         </div>
@@ -88,21 +88,21 @@ if ( current_user_can( 'edit_theme_options' ) ) {
 </div>
 
 <?php wp_footer(); ?>
-
+<script type='text/javascript' src='http://localhost/va/wp-content/themes/illdy/layout/js/scripts.js?ver=1.0.16'></script>
                     
         
                         <script type="text/javascript">
-                            $(document).ready(function(){
-                            	$("#video_9").click(function(){
-                            		$("#video_9").find(".embed-responsive-16by9").css({background: '#000'});
-                            		$("#video_9").find(".embed-responsive").html('<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/4EDqMpFkx0c?showinfo=0&iv_load_policy=3&modestbranding=1&nologo=1&autoplay=1&modestbranding=1" frameborder="0" allowfullscreen></iframe>');
+                            jQuery(document).ready(function(){
+                            	jQuery("#video_9").click(function(){
+                            		jQuery("#video_9").find(".embed-responsive-16by9").css({background: '#000'});
+                            		jQuery("#video_9").find(".embed-responsive").html('<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/4EDqMpFkx0c?showinfo=0&iv_load_policy=3&modestbranding=1&nologo=1&autoplay=1&modestbranding=1" frameborder="0" allowfullscreen></iframe>');
                             	});
                             })
                         </script>
                                         
                         <script type="text/javascript">
-                            $(document).ready(function(){
-                                $("#arousel_1").owlCarousel({
+                            jQuery(document).ready(function(){
+                                jQuery("#arousel_1").owlCarousel({
                                     loop:true,
                                     margin:0,
                                     dots:true,
@@ -125,8 +125,8 @@ if ( current_user_can( 'edit_theme_options' ) ) {
                             })
                         </script>
                         <script type="text/javascript">
-                            $(document).ready(function(){
-                            	$("#arousel_2").owlCarousel({
+                            jQuery(document).ready(function(){
+                            	jQuery("#arousel_2").owlCarousel({
                             		loop:true,
                             		margin:0,
                             		dots:false,
@@ -150,8 +150,8 @@ if ( current_user_can( 'edit_theme_options' ) ) {
                             })
                         </script>
                         <script type="text/javascript">
-                            $(document).ready(function(){
-                            	$("#arousel_3").owlCarousel({
+                            jQuery(document).ready(function(){
+                            	jQuery("#arousel_3").owlCarousel({
                             		loop:true,
                             		margin:0,
                             		dots:false,
@@ -171,6 +171,34 @@ if ( current_user_can( 'edit_theme_options' ) ) {
                             		}
                             	})
                             })
+                        </script>
+                        <script type="text/javascript">
+                            var stickyOffset = jQuery('.top-header').offset().top;
+                        	var menuOffset = jQuery('.navbar-related-top').offset().top;
+                        
+                        
+                            jQuery(window).scroll(function(){
+                                var sticky = jQuery('.top-header'),
+                        			menusticky = jQuery('.navbar-related-top'),
+                                    scroll = jQuery(window).scrollTop();
+                        
+                                if (scroll >= stickyOffset){
+                                    sticky.addClass('fixed');
+                                }
+                                else{
+                                    sticky.removeClass('fixed');
+                                }
+                        
+                                /*
+                        		if (scroll >= 125){
+                        			menusticky.addClass('fixed');
+                        		}
+                        		else{
+                        			menusticky.removeClass('fixed');
+                        		}
+                                */
+                        
+                            });
                         </script>
                     
 </body>

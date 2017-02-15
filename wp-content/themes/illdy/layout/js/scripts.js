@@ -127,7 +127,7 @@ jQuery( document ).ready( function($) {
 
 	// Called Functions
 	$( function() {
-		isIsIOS();
+		//isIsIOS();
 		smoothScrollAnchors();
 		openResponsiveMenu();
 		addHeightToFrontPageProject();
