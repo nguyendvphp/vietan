@@ -114,12 +114,13 @@ else: echo 'header-blog'; endif; ?>" style="<?php echo $style ?>">
 		</ul>
 	</nav><!--/.responsive-menu-->
     
-    <?php echo do_shortcode( '[breadcrumb]' ); ?>
+    <?php //echo do_shortcode( '[breadcrumb]' ); ?>
     
 	<?php
 	if ( get_option( 'show_on_front' ) == 'page' && is_front_page() ):
 		get_template_part( 'sections/front-page', 'bottom-header' );
 	else:
+        echo do_shortcode( '[breadcrumb]' );
 		get_template_part( 'sections/blog', 'bottom-header' );
 	endif;
 	?>
