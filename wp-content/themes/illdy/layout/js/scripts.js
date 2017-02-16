@@ -8,13 +8,7 @@ jQuery( document ).ready( function($) {
 	var documentHeight = $( document ).height();
 
 	// If is IOS
-	function isIsIOS() {
-		$.browser.device = (/iphone|ipad|ipod/i.test(navigator.userAgent.toLowerCase()));
-		if( $.browser.device == true ) {
-			$( '#counter' ).css( 'background-attachment', 'scroll' );
-			$( '#testimonials' ).css( 'background-attachment', 'scroll' );
-		}
-	}
+	
 
 	// Smooth Scroll Anchors
 	function smoothScrollAnchors() {

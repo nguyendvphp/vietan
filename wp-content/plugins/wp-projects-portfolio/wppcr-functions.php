@@ -916,8 +916,8 @@ function author_wpinfo() {
 
    	echo "\n<!-- WP Projects Portfolio Developed by Sundar Rajan of http://wpdeveloper.com !-->";
    
-	echo '<script type="text/javascript" src="'.WP_PLUGIN_URL.'/wp-projects-portfolio/scripts/cr_script.js"></script>';
-	echo '<script type="text/javascript" src="'.WP_PLUGIN_URL.'/wp-projects-portfolio/scripts/on-off-script.js"></script>';
+	//echo '<script type="text/javascript" src="'.WP_PLUGIN_URL.'/wp-projects-portfolio/scripts/cr_script.js"></script>';
+	//echo '<script type="text/javascript" src="'.WP_PLUGIN_URL.'/wp-projects-portfolio/scripts/on-off-script.js"></script>';
 
   	echo "<!-- WP Projects Portfolio Script Ends-->\n";
 
@@ -930,9 +930,9 @@ function crecommend_script_enqueuer() {
    wp_register_script( "crecommend_script", WP_PLUGIN_URL.'/wp-projects-portfolio/scripts/cr_script.js', array('jquery') );
    wp_localize_script( 'crecommend_script', 'crAjax', array( 'ajaxurl' => admin_url( 'admin-ajax.php' )));        
    wp_enqueue_script( 'jquery' );
-   wp_enqueue_script( 'crecommend_script' );  
+   //wp_enqueue_script( 'crecommend_script' );  
    wp_register_script( "onoff_script",WP_PLUGIN_URL.'/wp-projects-portfolio/scripts/on-off-script.js', array('jquery') );
-   wp_enqueue_script( 'onoff_script' );
+   //wp_enqueue_script( 'onoff_script' );
 }
 
 add_action('wp_head', 'author_wpinfo');

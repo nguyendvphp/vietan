@@ -2821,4 +2821,11 @@ ul#menu-footer {
       border-right: none; }
     ul#menu-footer li a {
       padding: 0 5px 0 0; }
+.breadcrumbs {
+    background: #228fea;
+    color: #fff;
+    padding: 5px 2px;
+    height: 30px;
+    width: 100%;
+}
 /*# sourceMappingURL=main.css.map */

@@ -47,6 +47,7 @@ if ( ( is_single() || is_page() || is_archive() ) && get_theme_mod( 'illdy_archi
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<?php wp_head(); ?>
+    <script type='text/javascript' src='http://localhost/va/wp-content/themes/illdy/layout/js/jquery-1.12.2.min.js?ver=1.12.2'></script>
 </head>
 <body <?php body_class(); ?>>
 <?php if ( $preloader_enable == 1 ): ?>
@@ -112,12 +113,9 @@ else: echo 'header-blog'; endif; ?>" style="<?php echo $style ?>">
 			?>
 		</ul>
 	</nav><!--/.responsive-menu-->
-    <div class="breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/">
-        <?php if(function_exists('bcn_display'))
-        {
-            bcn_display();
-        }?>
-    </div>
+    
+    <?php echo do_shortcode( '[breadcrumb]' ); ?>
+    
 	<?php
 	if ( get_option( 'show_on_front' ) == 'page' && is_front_page() ):
 		get_template_part( 'sections/front-page', 'bottom-header' );

@@ -224,13 +224,13 @@ if ( ! function_exists( 'illdy_enqueue_javascripts' ) ) {
 		}
 		//wp_enqueue_script( 'jquery-ui-progressbar', '', array( 'jquery' ), '', true );
         //wp_enqueue_script( 'illdy-scripts', get_template_directory_uri() . '/layout/js/modernizr-2.8.3-respond-1.4.2.min.js', array( 'jquery' ), '3.3.6', true );
-        wp_enqueue_script( 'illdy-scripts', get_template_directory_uri() . '/layout/js/jquery-1.12.2.min.js', array( 'jquery' ), '1.12.2', true );
+        //wp_enqueue_script( 'illdy-scripts', get_template_directory_uri() . '/layout/js/jquery-1.12.2.min.js', array( 'jquery' ), '1.12.2', true );
 		wp_enqueue_script( 'illdy-bootstrap', get_template_directory_uri() . '/layout/js/bootstrap/bootstrap.min.js', array( 'jquery' ), '3.3.6', true );
 		wp_enqueue_script( 'illdy-owl-carousel', get_template_directory_uri() . '/layout/js/owl-carousel/owl-carousel.min.js', array( 'jquery' ), '2.0.0', true );
 		//wp_enqueue_script( 'illdy-count-to', get_template_directory_uri() . '/layout/js/count-to/count-to.min.js', array( 'jquery' ), '', true );
 		//wp_enqueue_script( 'illdy-visible', get_template_directory_uri() . '/layout/js/visible/visible.min.js', array( 'jquery' ), '', true );
 		//wp_enqueue_script( 'illdy-plugins', get_template_directory_uri() . '/layout/js/plugins.min.js', array( 'jquery' ), '1.0.16', true );
-		wp_enqueue_script( 'illdy-scripts', get_template_directory_uri() . '/layout/js/scripts.min.js', array( 'jquery' ), '1.0.16', true );
+		//wp_enqueue_script( 'illdy-scripts', get_template_directory_uri() . '/layout/js/scripts.min.js', array( 'jquery' ), '1.0.16', true );
         //wp_enqueue_script( 'illdy-scripts', get_template_directory_uri() . '/layout/js/main.js', array( 'jquery' ), '1.0', true );
         //wp_enqueue_script( 'illdy-scripts', get_template_directory_uri() . '/layout/js/responsive-tabs.js', array( 'jquery' ), '1.0', true );
 		if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

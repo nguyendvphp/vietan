@@ -200,6 +200,81 @@ if ( current_user_can( 'edit_theme_options' ) ) {
                         
                             });
                         </script>
+                        <script>
+                        /**
+                         *	jQuery Document Ready
+                         */
+                        jQuery( document ).ready( function($) {
+                        	var windowWidth = $( window ).width();
+                        	var windowHeight = $( window ).height();
+                        	var documentWidth = $( document ).width();
+                        	var documentHeight = $( document ).height();
+                        
+                        	// Open Responsive Menu
+                        	function openResponsiveMenu() {
+                        		$( '.open-responsive-menu' ).click( function() {
+                        			$( '.responsive-menu' ).toggle( 'slow', function() {
+                        				$( this ).toggleClass( 'active' );
+                        			});
+                        		});
+                        	}
+                        
+                        	// Sub Menu
+                        	function subMenu() {
+                        		$( '#header .top-header .header-navigation ul li.menu-item-has-children' ).hover( function() {
+                        			$( this ).children( 'ul' ).css( 'visibility', 'visible' ).fadeIn();
+                        		}, function() {
+                        			$( this ).children( 'ul' ).css( 'visibility', 'hidden' ).fadeOut();
+                        		});
+                        	}
+                        
+                        	// Align Sub Sub Menu
+                        	function alignSubSubMenu() {
+                        		if( $( '#header .top-header .header-navigation ul li.menu-item-has-children' ).length ) {
+                        			var subSubMenu = $( '#header .top-header .header-navigation ul li.menu-item-has-children ul' );
+                        
+                        			$( subSubMenu ).each( function() {
+                        				if( ( windowWidth - $( this ).offset()['left'] ) < 250 ) {
+                        					$( this ).css( 'left', '-250px' );
+                        				}
+                        			});
+                        		}
+                        	}
+                        
+                        	// WooCommerce Tabs
+                        	function woocommerceTabs() {
+                        		var descriptionTab = $( 'li.description_tab' );
+                        		var descriptionTabLink = $( 'li.description_tab a' );
+                        		var reviewsTab = $( 'li.reviews_tab' );
+                        		var reviewsTabLink = $( 'li.reviews_tab a' );
+                        		var panelDescription = $( '.panel#tab-description' );
+                        		var panelReviews = $( '.panel#tab-reviews' );
+                        
+                        		$( descriptionTabLink ).click( function() {
+                        			$( this ).parent().addClass( 'active' );
+                        			$( reviewsTab ).removeClass( 'active' );
+                        			$( panelDescription ).show();
+                        			$( panelReviews ).hide();
+                        		});
+                        
+                        		$( reviewsTabLink ).click( function() {
+                        			$( this ).parent().addClass( 'active' );
+                        			$( descriptionTab ).removeClass( 'active' );
+                        			$( panelReviews ).show();
+                        			$( panelDescription ).hide();
+                        		});
+                        	}
+                        
+                        	// Called Functions
+                        	$( function() {
+                        		
+                        		openResponsiveMenu();
+                        		subMenu();
+                        		alignSubSubMenu();
+                        		woocommerceTabs();
+                        	});
+                        });
+                        </script>
                     
 </body>
 </html>
