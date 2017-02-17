@@ -33,7 +33,7 @@ if ( get_option( 'show_on_front' ) == 'page' && is_front_page() ) {
 
 // append the parallax effect
 if ( $jumbotron_parallax_enable == true ) {
-	$style .= 'background-attachment: fixed;';
+	//$style .= 'background-attachment: fixed;';
 }
 
 if ( ( is_single() || is_page() || is_archive() ) && get_theme_mod( 'illdy_archive_page_background_stretch' ) == 2 ) {
@@ -120,8 +120,14 @@ else: echo 'header-blog'; endif; ?>" style="<?php echo $style ?>">
 	if ( get_option( 'show_on_front' ) == 'page' && is_front_page() ):
 		get_template_part( 'sections/front-page', 'bottom-header' );
 	else:
-        echo do_shortcode( '[breadcrumb]' );
+        
 		get_template_part( 'sections/blog', 'bottom-header' );
+        
 	endif;
 	?>
 </header><!--/#header-->
+<div class="container">
+    <div class="col-sm-12">
+        <?php if ( get_option( 'show_on_front' ) == 'page' && is_front_page() ) { }else{ echo do_shortcode( '[breadcrumb]' );}?>
+    </div>
+</div>

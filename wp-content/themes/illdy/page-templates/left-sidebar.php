@@ -12,7 +12,7 @@
 <div class="container">
 	<div class="row">
 		<?php get_sidebar(); ?>
-		<div class="col-sm-7">
+		<div class="col-sm-8">
 			<section id="blog">
 				<?php
 				if( have_posts() ):

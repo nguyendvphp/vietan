@@ -17,5 +17,5 @@
 	<div class="blog-post-entry">
 		<?php the_excerpt(); ?>
 	</div><!--/.blog-post-entry-->
-	<a href="<?php the_permalink(); ?>" title="<?php _e( 'Read more', 'illdy' ); ?>" class="blog-post-button"><?php _e( 'Read more', 'illdy' ); ?></a>
+	<a href="<?php the_permalink(); ?>" title="<?php _e( 'Xem thêm', 'illdy' ); ?>" class="blog-post-button"><?php _e( 'Xem thêm', 'illdy' ); ?></a>
 </article><!--/#post-<?php the_ID(); ?>.blog-post-->

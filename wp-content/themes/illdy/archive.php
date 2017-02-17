@@ -9,7 +9,7 @@
 <?php get_header(); ?>
 <div class="container">
 	<div class="row">
-		<div class="col-sm-7">
+		<div class="col-sm-8">
 			<section id="blog">
 				<?php do_action( 'illdy_above_content_after_header' ); ?>
 				<?php

@@ -1541,7 +1541,11 @@ category images
   height: auto;
   margin-top: 16px;
   padding: 14px 0;
-  text-align: center;
+  text-align: left;
+  text-transform: uppercase;
+  color: #228fea;
+  font-family: Roboto;
+  border-bottom: 1px solid;
 }
 .prod-cat-category-label .prod-cat-category-name.blockCatHeading {
   background: #111;

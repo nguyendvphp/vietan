@@ -1285,7 +1285,7 @@ ul li{
 	margin-bottom: 10px;
 	line-height: 1.4;
 	font-weight: 700;
-	font-size: 25px;
+	font-size: 16px;
 	color: #333;
 	text-transform: uppercase;
 	-webkit-transition: all 0.3s;
@@ -1297,7 +1297,7 @@ ul li{
 
 #blog .blog-post .blog-post-title:hover {
 	text-decoration: none;
-	color: #f1d204;
+	color: #228fea;
 }
 
 #blog .blog-post h2.blog-post-title:hover {
@@ -1324,12 +1324,12 @@ ul li{
 }
 
 #blog .blog-post .blog-post-meta .post-meta-author {
-	color: #f1d204;
+	color: #228fea;
 }
 
 #blog .blog-post .blog-post-meta .post-meta-author .fa {
 	margin-right: 6px;
-	color: #f1d204;
+	color: #228fea;
 }
 
 #blog .blog-post .blog-post-meta .post-meta-time,
@@ -1345,7 +1345,7 @@ ul li{
 #blog .blog-post .blog-post-meta .post-meta-time .fa,
 #blog .blog-post .blog-post-meta .post-meta-categories .fa {
 	margin-right: 6px;
-	color: #f1d204;
+	color: #228fea;
 }
 
 #blog .blog-post .blog-post-meta .post-meta-comments {
@@ -1355,7 +1355,7 @@ ul li{
 
 #blog .blog-post .blog-post-meta .post-meta-comments .fa {
 	margin-right: 6px;
-	color: #f1d204;
+	color: #228fea;
 }
 
 #blog .blog-post .blog-post-meta .post-meta-comments a {
@@ -1373,20 +1373,21 @@ ul li{
 }
 
 #blog .blog-post .blog-post-button {
-	height: 45px;
-	line-height: 45px;
-	background-color: #f1d204;
-	padding: 0 30px;
+	height: 35px;
+	line-height: 35px;
+	background-color: #228fea;
+	padding: 0 10px;
 	display: inline-block;
 	border-radius: 3px;
 	font-weight: 700;
-	font-size: 18px;
+	font-size: 14px;
 	color: #fff;
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	-o-transition: all 0.3s;
 	transition: all 0.3s;
-	text-transform: uppercase;
+    float: right;
+	/*text-transform: uppercase;*/
 }
 
 #blog .blog-post .blog-post-button:hover {
@@ -1515,13 +1516,13 @@ ul li{
 #sidebar {
 	width: 90%;
 	margin: 50px 0 40px 0;
-	padding-left: 10%;
+	padding-left: 5%;
 	border-left: 1px solid #ebebeb;
 	float: right;
 }
 
 .page-template-left-sidebar #sidebar {
-	padding-right: 10%;
+	padding-right: 3%;
 	padding-left: 0;
 	border-right: 1px solid #ebebeb;
 	border-left: none;
@@ -1548,7 +1549,7 @@ ul li{
 	content: "";
 	width: 41px;
 	height: 3px;
-	background-color: #f1d204;
+	background-color: #228fea;
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -1560,10 +1561,12 @@ ul li{
 	padding: 0;
 	font-weight: 700;
 	font-size: 20px;
-	color: #333;
+	color: #228fea;
 	text-transform: uppercase;
+    font-family: Roboto;
 }
-
+.navbar-inverse{ background-color: #fff !important;
+     border-color: #fff !important; }
 .widget a {
 	color: #333;
 }
@@ -1586,7 +1589,7 @@ ul li{
 
 .widget ul li {
 	width: 100%;
-	padding: 20px 0 20px 20px;
+	padding: 10px 0 10px 20px;
 	border-bottom: 1px solid #ebebeb;
 	position: relative;
 }
@@ -1609,7 +1612,7 @@ ul li{
 }
 
 .widget ul li a:hover {
-	color: #f1d204;
+	color: #228fea;
 	text-decoration: none;
 }
 
