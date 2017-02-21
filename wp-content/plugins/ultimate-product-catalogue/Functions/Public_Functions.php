@@ -147,9 +147,17 @@ if (!class_exists('UPCP_Product')){
 				$Item_Display_Price .= "<ins><span class='amount' itemprop='offers' itemscope itemtype='http://schema.org/Offer'>" . $Price . "</span></ins>";
 				$Item_Display_Price .= "</span>"; 
 			}
-			else {$Item_Display_Price = "<span class='full-price' itemprop='offers' itemscope itemtype='http://schema.org/Offer'>" . $Price . "</span>";}
-
-			return $Item_Display_Price;
+			else { //echo $Price; die;
+			     if ($Item_Link > 0) {
+			         $Item_Display_Price = "<span class='full-price' itemprop='offers' itemscope itemtype='http://schema.org/Offer'>" . $Price . "</span>";
+                 } else {
+                    $Item_Display_Price = "<span class='full-price' itemprop='offers' itemscope itemtype='http://schema.org/Offer'>Giá:Liên hệ</span>";
+                 }
+            }
+            
+            
+            return $Item_Display_Price;
+			
     	}
 	}
 }

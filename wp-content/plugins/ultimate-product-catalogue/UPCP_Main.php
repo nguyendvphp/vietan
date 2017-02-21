@@ -26,18 +26,18 @@ global 	$categories_table_name,
 global $wpdb;
 global $upcp_message;
 global $Full_Version;
-$categories_table_name = $wpdb->prefix . "UPCP_Categories";
-$subcategories_table_name = $wpdb->prefix . "UPCP_SubCategories";
-$items_table_name = $wpdb->prefix . "UPCP_Items";
-$item_images_table_name = $wpdb->prefix . "UPCP_Item_Images";
-$catalogues_table_name = $wpdb->prefix . "UPCP_Catalogues";
-$catalogue_items_table_name = $wpdb->prefix . "UPCP_Catalogue_Items";
-$item_videos_table_name = $wpdb->prefix . "UPCP_Videos";
-$tags_table_name = $wpdb->prefix . "UPCP_Tags";
-$tagged_items_table_name = $wpdb->prefix . "UPCP_Tagged_Items";
-$tag_groups_table_name = $wpdb->prefix . "UPCP_Tag_Groups";
-$fields_table_name = $wpdb->prefix . "UPCP_Custom_Fields";
-$fields_meta_table_name = $wpdb->prefix . "UPCP_Fields_Meta";
+$categories_table_name = $wpdb->prefix . "upcp_categories";
+$subcategories_table_name = $wpdb->prefix . "upcp_subcategories";
+$items_table_name = $wpdb->prefix . "upcp_items";
+$item_images_table_name = $wpdb->prefix . "upcp_item_images";
+$catalogues_table_name = $wpdb->prefix . "upcp_catalogues";
+$catalogue_items_table_name = $wpdb->prefix . "upcp_catalogue_items";
+$item_videos_table_name = $wpdb->prefix . "upcp_videos";
+$tags_table_name = $wpdb->prefix . "upcp_tags";
+$tagged_items_table_name = $wpdb->prefix . "upcp_tagged_items";
+$tag_groups_table_name = $wpdb->prefix . "upcp_tag_groups";
+$fields_table_name = $wpdb->prefix . "upcp_custom_fields";
+$fields_meta_table_name = $wpdb->prefix . "upcp_fields_meta";
 $UPCP_db_version = "4.0.6";
 
 define( 'UPCP_CD_PLUGIN_PATH', plugin_dir_path( __FILE__ ) );
@@ -198,7 +198,7 @@ function Add_UPCP_FrontEnd_Scripts() {
 	wp_enqueue_script('gridster', plugins_url("/js/jquery.gridster.js", __FILE__ ), array( 'jquery' ), '', true);
 	if ($Lightbox == "Yes" or $Lightbox == "Main") {
 		wp_enqueue_script('jquery-mousewheel', plugins_url("js/jquery.mousewheel.min.js", __FILE__), array('jquery'));
-		wp_enqueue_script('ultimate-lightbox', plugins_url("js/ultimate-lightbox.js", __FILE__), array('jquery'));
+		wp_enqueue_script('ultimate-lightbox', plugins_url("js/ultimate-lightbox.js", __FILE__), array('jquery'), '', true);
 	}
 	if ($Catalogue_Style != "None" and $Catalogue_Style == "main-hover") { 
 			wp_enqueue_script('upcp-theme-js', plugins_url( 'js/catalogue-style-hover.js' , __FILE__ ), array( 'jquery' ), '1.0', true);
